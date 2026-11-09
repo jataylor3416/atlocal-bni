@@ -590,7 +590,6 @@ function sendLead(d,src){
     chips.classList.toggle('struck', i===1 && (fromEnd||false));
     document.getElementById('count').textContent=(i+1)+' / '+slides.length;
     document.getElementById('progress').style.width=((i+1)/slides.length*100)+'%';
-    try{history.replaceState(null,'','#'+(i+1));}catch(e){}
   }
   function next(){
     var st=steps(cur);
@@ -660,8 +659,8 @@ function sendLead(d,src){
     this.reset(); if(document.activeElement) document.activeElement.blur();
   });
 
-  var start=parseInt((location.hash||'').slice(1),10);
-  show(start>0&&start<=slides.length?start-1:0);
+  try{if(location.hash)history.replaceState(null,'',location.pathname+location.search);}catch(e){}
+  show(0);
 })();
 </script>
 </body>
