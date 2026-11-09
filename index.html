@@ -214,6 +214,18 @@ h2.one{font-size:76px;margin-bottom:40px}
 .p3{left:110px;top:500px;width:470px;height:320px;z-index:3}
 .pic.p1::before{background-position:center 30%}
 .pic.p2::before{background-position:center 25%}
+/* exhibits */
+.why2-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:34px}
+.why2-head h2{margin:0;font-size:84px}
+.why2-ask{font-size:38px;font-weight:800;text-align:right;max-width:560px;line-height:1.15}
+.exhibits{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.exh{margin:0}
+.exh-img{height:490px;border-radius:26px;background:var(--royal) center/cover}
+.exh figcaption{font-size:26px;line-height:1.35;margin-top:20px}
+.exh figcaption b{font-weight:800;color:var(--coral)}
+.exh-tag{display:inline-block;background:var(--coral);color:var(--plum);border-radius:999px;padding:5px 18px;font-weight:800;font-size:18px;letter-spacing:.1em;text-transform:uppercase;margin-right:12px;vertical-align:3px}
+.why2-contact{position:absolute;left:140px;bottom:50px;font-size:26px;font-weight:600}
+.why2-contact b{color:var(--coral);font-weight:600}
 /* 9 thanks */
 .thanks{display:grid;grid-template-columns:1fr 360px;gap:100px;align-items:end;height:100%}
 .thanks h1{font-size:150px}
@@ -432,24 +444,28 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
 
 <!-- 10 MY WHY -->
 <section class="slide plum">
-  <div class="why">
+  <div class="why2-head">
     <div>
       <span class="label">My "why"</span>
-      <h2>Why I do <span class="coral">this.</span></h2>
-      <ul class="whys">
-        <li data-step><b>They eat.</b> Constantly. One of them has started on his own teeth.</li>
-        <li data-step><b>They think I "just play on my phone."</b> Technically, yes. Professionally.</li>
-        <li data-step><b>This face took 45 minutes, a ring light and bribing two boys.</b> The least you can do is refer me.</li>
-        <li data-step><b>Somebody has to pay for all of it.</b> Your referral is literally feeding children.</li>
-      </ul>
-      <p class="contact-line">Jamie Taylor · <b>jamie@atlocal.com</b> · 501-516-6312</p>
+      <h2>Exhibits <span class="coral">A, B and C.</span></h2>
     </div>
-    <div class="collage">
-      <div class="pic p1" data-label="Family photo" style="--img:url(img/why-family.jpg)"></div>
-      <div class="pic p2" data-label="Glam photo of Jamie" style="--img:url(img/why-glam.jpg)"></div>
-      <div class="pic p3" data-label="Kids photo" style="--img:url(img/why-kids.jpg)"></div>
-    </div>
+    <p class="why2-ask">Refer me. These people are <span class="coral">expensive.</span></p>
   </div>
+  <div class="exhibits">
+    <figure class="exh" data-step>
+      <div class="exh-img" style="background-image:url(img/why-kids.jpg);background-position:center 30%"></div>
+      <figcaption><span class="exh-tag">Exhibit A</span><b>The little one.</b> Eats constantly. Has started on his own teeth.</figcaption>
+    </figure>
+    <figure class="exh" data-step>
+      <div class="exh-img" style="background-image:url(img/why-teen.jpg);background-position:center 40%"></div>
+      <figcaption><span class="exh-tag">Exhibit B</span><b>The teenager.</b> Eats twice as much, and handles his brother like a sack of groceries.</figcaption>
+    </figure>
+    <figure class="exh" data-step>
+      <div class="exh-img" style="background-image:url(img/why-glam.jpg);background-position:center 20%"></div>
+      <figcaption><span class="exh-tag">Exhibit C</span><b>Me.</b> This is what 45 minutes of makeup and zero sleep looks like.</figcaption>
+    </figure>
+  </div>
+  <p class="why2-contact">Jamie Taylor · <b>jamie@atlocal.com</b> · 501-516-6312</p>
 </section>
 
 </div></div>
