@@ -214,6 +214,22 @@ h2.one{font-size:76px;margin-bottom:40px}
 .p3{left:110px;top:500px;width:470px;height:320px;z-index:3}
 .pic.p1::before{background-position:center 30%}
 .pic.p2::before{background-position:center 25%}
+/* ads stall */
+.adstats{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:-10px}
+.adstat{background:var(--white);border-radius:24px;padding:32px 36px;position:relative;min-height:330px}
+.an{font-size:100px;font-weight:800;color:var(--ruby);line-height:1}
+.an small{font-size:52px}
+.adstat h3{font-size:32px;margin:14px 0 10px}
+.adstat p{font-size:25px;line-height:1.38}
+.adstat .src{position:absolute;left:36px;bottom:22px;font-size:16px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--royal)}
+.middle{margin-top:56px;display:grid;gap:22px}
+.mrow{display:flex;align-items:center;gap:26px}
+.mrow p{font-size:40px;font-weight:600}
+.mrow p b{font-weight:800}
+.mtag{flex:none;width:140px;text-align:center;border-radius:999px;padding:10px 0;font-weight:800;font-size:24px;letter-spacing:.1em;text-transform:uppercase}
+.mtag.then{background:var(--white);color:var(--plum);border:3px solid var(--plum)}
+.mtag.now{background:var(--ruby);color:var(--white);border:3px solid var(--ruby)}
+.mrow:first-child p{text-decoration:line-through;text-decoration-color:var(--ruby);text-decoration-thickness:3px}
 /* exhibits */
 .why2-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:34px}
 .why2-head h2{margin:0;font-size:84px}
@@ -269,6 +285,22 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
   <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>02</span></div>
 </section>
 
+<!-- 2b ADS -->
+<section class="slide cloud">
+  <span class="label">Why the old playbook stalls</span>
+  <h2>Ads cost more. People trust them <span class="ruby">less.</span></h2>
+  <div class="adstats">
+    <div class="adstat" data-step><div class="an">+14<small>%</small></div><h3>Meta's price per ad, in one year</h3><p>Up 23% in the U.S. and Canada. You pay more for the same scroll-past.</p><span class="src">Meta Q3 2026 earnings</span></div>
+    <div class="adstat" data-step><div class="an">89<small>%</small></div><h3>trust a recommendation from someone they know</h3><p>Banner ads? Around 42%. People believe people, not ads.</p><span class="src">Nielsen Trust in Advertising</span></div>
+    <div class="adstat" data-step><div class="an">70<small>%</small></div><h3>more clicks on creator-led ads</h3><p>Same cost as a brand ad. The only difference is the face.</p><span class="src">TikTok for Business</span></div>
+  </div>
+  <div class="middle" data-step>
+    <div class="mrow"><span class="mtag then">Then</span><p>See an ad. See it again. See it seven more times. <b>Maybe</b> click.</p></div>
+    <div class="mrow"><span class="mtag now">Now</span><p>See someone you trust use it. Tap their link. <b>Book.</b></p></div>
+  </div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>03</span></div>
+</section>
+
 <!-- 3 THE SHIFT -->
 <section class="slide white">
   <span class="label">What changed</span>
@@ -298,7 +330,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
     </div>
   </div>
   <p class="shift-note" data-step>People now trust real over polished. <span class="ruby">Authenticity is king.</span> For trackable leads and a real connection, creator content has taken over.</p>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>03</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>04</span></div>
 </section>
 
 <!-- 3 AVATAR -->
@@ -320,7 +352,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
       <p class="ex">A certified trainer walking you through the machine.</p>
     </div>
   </div>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>04</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>05</span></div>
 </section>
 
 <!-- 4 SYSTEM -->
@@ -336,7 +368,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
     <div class="step" data-step><div class="n">6</div><h3>Sign-up</h3><p>Booked, tracked back to the exact video and creator.</p></div>
   </div>
   <p class="flow-note" data-step>Spend follows results. If a video doesn't book people, it stops.</p>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>05</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>06</span></div>
 </section>
 
 <!-- 5 CASE STUDY -->
@@ -362,7 +394,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
       <p class="fine">Public Instagram counts, @discoverstrengthlittlerock, first month open (as of Oct 21, 2026).</p>
     </div>
   </div>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>06</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>07</span></div>
 </section>
 
 <!-- 6 THE LINK -->
@@ -402,7 +434,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
       <p class="score-note">Every creator has their own link. Every booking is tagged to who sent it. Creators get paid when people show up.</p>
     </div>
   </div>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>07</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>08</span></div>
 </section>
 
 <!-- 7 TRY IT -->
@@ -426,7 +458,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
     </div>
   </div>
   <div class="toast" id="b-toast"></div>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>08</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>09</span></div>
 </section>
 
 <!-- 8 REFERRALS -->
@@ -439,7 +471,7 @@ body.fs #controls{opacity:.25;transition:opacity .3s} body.fs #controls:hover{op
     <div class="ref" data-step><h3>Big-ticket local</h3><p>Home builders, remodelers, real estate, auto.</p></div>
   </div>
   <p class="sounds" data-step>Listen for: <span>"We need more appointments."</span> &nbsp;<span>"We're opening soon."</span> &nbsp;<span>"Our social media isn't bringing anyone in."</span></p>
-  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>09</span></div>
+  <div class="footer"><img src="img/atlocal-logo-dark.svg" alt="atLocal"><span>10</span></div>
 </section>
 
 <!-- 10 MY WHY -->
